@@ -1,0 +1,73 @@
+body {
+    background-color: #f0e8ff; /* Fondo lila claro */
+    font-family: Arial, sans-serif;
+    color: #4527a0; /* Texto lila oscuro */
+    margin: 0;
+    padding: 0;
+  }
+
+  #novaTascaInput,
+  #filtrarInput {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #4527a0; /* Borde lila oscuro */
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  #afegirBtn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4527a0; /* Fondo lila oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #afegirBtn:hover {
+    background-color: #6a1b9a; /* Cambio de color al pasar el ratón */
+  }
+
+  #llistaTasques {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .task {
+    background-color: #e1bee7; /* Fondo lila claro */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .task-text {
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+
+  .delete {
+    background-color: #4527a0; /* Fondo lila oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .delete:hover {
+    background-color: #6a1b9a; /* Cambio de color al pasar el ratón */
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .finalitzat:checked + .task-text {
+    text-decoration: line-through;
+    color: grey;
+  }
